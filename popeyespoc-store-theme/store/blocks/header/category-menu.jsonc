@@ -1,0 +1,76 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass": "header-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-category-dogs",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "Baldes"
+          }
+        },
+        {
+          "id": "menu-item-category-cats",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "Refrigerantes"
+          }
+        },
+        {
+          "id": "menu-item-category-humans",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "combos"
+          }
+        },
+        {
+          "id": "menu-item-category-birds",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "Sanduíches"
+          }
+        },
+        {
+          "id": "menu-item-category-fishes",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "Siders"
+          }
+        },
+        {
+          "id": "menu-item-category-other",
+          "type": "category",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "categoryId": "1",
+          "itemProps": {
+            "text": "Promos"
+          }
+        }
+      ]
+    }
+  }
+}

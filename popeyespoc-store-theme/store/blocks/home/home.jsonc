@@ -1,0 +1,118 @@
+{
+  "store.home": {
+    "parent": { 
+      "header": "header#home"
+    },
+    "blocks": [
+      "flex-layout.row#home-banner01",
+      "flex-layout.row#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#home-banner02",
+      "flex-layout.row#info-cards"
+    ]
+  },
+
+  "flex-layout.row#home-banner01": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#home-banner01"],
+    "title": "Home - Banner 1"
+  },
+  "flex-layout.col#home-banner01": {
+    "children": ["image#home-banner-01"]
+  },
+  "image#home-banner-01": {
+    "props": {
+      "src": "assets/banners/banner-home.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/Outros-Animais"
+      }
+    }
+  },
+  "flex-layout.row#home-banner02": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#home-banner02"],
+    "title": "Home - Banner 2"
+  },
+  "flex-layout.col#home-banner02": {
+    "children": ["image#home-banner-02"]
+  },
+  "image#home-banner-02": {
+    "props": {
+      "src": "assets/banners/banner-home02-with-text.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/Passaros"
+      }
+    }
+  },
+  "flex-layout.row#shelf-title": {
+    "children": ["rich-text#shelf-title", "menu-item#shelf-link"],
+    "props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Home - Prateleira 1 - Título"
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Coleção Fun",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "menu-item#shelf-link": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Outros-Animais",
+        "noFollow": false,
+        "tagTitle": "Coleção Fun",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "title": "Home - Prateleira 1"
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#demo1"],
+    "children": ["slider-layout#demo-products1"],
+    "props": {
+      "category": "1" /* categoria Cachorros */,
+      // "category": "1000255" /* categoria Gatos */,
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf#demo1": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+    ]
+  },
+  "slider-layout#demo-products1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

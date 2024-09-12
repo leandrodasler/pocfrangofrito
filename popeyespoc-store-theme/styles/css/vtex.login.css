@@ -1,0 +1,36 @@
+div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"] {
+  width: 100%;
+  border-radius: 8px;
+}
+
+div[class*="vtex-flex-layout-0-x-flexCol--dogs"]
+  div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"],
+div[class*="vtex-flex-layout-0-x-flexCol--cats"]
+  div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div[class*="vtex-flex-layout-0-x-flexCol--dogs"]
+  div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"] {
+  flex-direction: column;
+}
+
+div[class*="vtex-flex-layout-0-x-flexCol--dogs"]
+  div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"]::before {
+  content: url("assets/banners/assinatura-pdp.gif");
+  margin-bottom: 10px;
+}
+
+div[class*="vtex-flex-layout-0-x-flexCol--cats"]
+  div[class*="vtex-flex-layout-0-x-flexRow--assembly-options"]
+  button[class*="vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-secondary b--action-secondary c-on-action-secondary hover-bg-action-secondary hover-b--action-secondary hover-c-on-action-secondary pointer"]::after {
+  content: url("assets/banners/assinatura-pdp-left.gif");
+  height: 80px;
+}

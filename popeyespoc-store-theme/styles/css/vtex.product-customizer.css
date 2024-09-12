@@ -1,0 +1,23 @@
+.productAssemblyGroupRequiredTag {
+  display: none;
+}
+
+.productAssemblyGroupName {
+  text-transform: none;
+}
+
+.productAssemblyOptionItemName {
+  font-size: 1rem;
+}
+
+.productAssemblyOptionItemPrice::after {
+  content: '/ unidade';
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.itemContainer :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  --image-fixed-width: 60px;
+  min-width: var(--image-fixed-width);
+  max-width: var(--image-fixed-width);
+}

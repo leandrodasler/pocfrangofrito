@@ -1,0 +1,44 @@
+{
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#header-mobile", "flex-layout.row#header-search"]
+  },
+  "sticky-layout#header-mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["minicart-bar#header", "flex-layout.row#header-main-mobile"]
+  },
+  "flex-layout.row#header-main-mobile": {
+    "props": {
+      "blockClass": "main-header",
+      "colSizing": "equal"
+    },
+    "children": ["flex-layout.col#header-content-mobile"]
+  },
+  "flex-layout.col#header-content-mobile": {
+    "props": {
+      "blockClass": "header-content"
+    },
+    "children": ["drawer#header", "flex-layout.col#logo-desktop", "flex-layout.row#actions-header"]
+  },
+  "flex-layout.row#header-search": {
+    "props": {
+      "horizontalAlign": "center",
+      "colSizing": "equal"
+    },
+    "children": ["flex-layout.col#header-search-content"]
+  },
+  "flex-layout.col#header-search-content": {
+    "props": {
+      "blockClass": "header-search-col",
+      "horizontalAlign": "center"
+    },
+    "children": ["search-bar#header-mobile"]
+  },
+  "drawer#header": {
+    "props": {
+      "blockClass": "header-drawer"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  }
+}

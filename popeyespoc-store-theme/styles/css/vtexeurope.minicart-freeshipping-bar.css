@@ -1,0 +1,17 @@
+.text1 {
+  width: 60%;
+}
+.text2 {
+  margin-left: 0.2rem;
+}
+.barContainer {
+  background-color: #fe7c01;
+}
+.freigthScaleContainer {
+  padding: 10px 15%;
+}
+.sliderText,
+.text4 {
+  margin: -45px 0 25px 0;
+  text-align: right;
+}

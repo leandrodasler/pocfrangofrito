@@ -1,0 +1,151 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header#home": {
+    "blocks": ["header-layout.desktop#home", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#header-desktop", "flex-layout.row#header-menu"]
+  },
+  "header-layout.desktop#home": {
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#header-desktop", "flex-layout.row#header-menu#home"]
+  },
+  "flex-layout.row#demo-store-warning": {
+    "props": {
+      "blockClass": "demo-store-warning",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#demo-store-warning"]
+  },
+  "flex-layout.col#demo-store-warning": {
+    "children": ["rich-text#demo-store-warning"]
+  },
+  "rich-text#demo-store-warning": {
+    "props": {
+      "text": "Atenção! Esta é uma loja de demonstração da plataforma VTEX. Os produtos, preços e entregas são meramente ilustrativos.",
+      "textPosition": "CENTER",
+      "textColor": "c-action-primary",
+      "blockClass": "demo-store-warning"
+    }
+  },
+  "sticky-layout#header-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["minicart-bar#header", "flex-layout.row#header-main-desktop"]
+  },
+  "minicart-bar#header": {
+    "props": {
+      "blockClass": "minicart-bar-header"
+    }
+  },
+  "flex-layout.row#header-main-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "colSizing": "equal"
+    },
+    "children": ["flex-layout.col#header-content"]
+  },
+  "flex-layout.col#header-content": {
+    "props": {
+      "blockClass": "header-content"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#header",
+      "flex-layout.row#actions-header"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "blockClass": "header-logo",
+      "preventVerticalStretch": true,
+      "verticalAlign": "center"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.row#actions-header": {
+    "props": {
+      "blockClass": "header-actions",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["minicart.v2", "login"]
+  },
+  "menu-item#wish-list": {
+    "props": {
+      "blockClass": "wishlist-custom",
+      "id": "menu-item-wish-list",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/wishlist",
+        "noFollow": false,
+        "tagTitle": "minhas listas"
+      },
+      "iconProps": {
+        "id": "list-icon",
+        "size": 32,
+        "viewBox": "-3 -4 24 24",
+        "activeClassName": "wishlist-active-heart",
+        "mutedClassName": "wishlist-muted-heart"
+      },
+      "iconToTheLeft": true
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Entre ou Cadastre-se",
+      "showIconProfile": true,
+      "hideIconLabel": false
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/brand/brand.svg",
+      "width": "150"
+    }
+  },
+  "flex-layout.row#header-menu": {
+    "props": {
+      "blockClass": "category-menu-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#category-menu"]
+  },
+  "flex-layout.row#header-menu#home": {
+    "props": {
+      "blockClass": "category-menu-header-home",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#category-menu"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  }
+}

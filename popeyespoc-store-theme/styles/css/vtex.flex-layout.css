@@ -1,0 +1,305 @@
+/* HEADER */
+.flexCol--header-logo {
+  justify-content: center;
+}
+
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  /* background-color: #f0f0f0; */
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexCol--switcherMobileCol {
+  width: 20%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+/* CARD INFO - HOME */
+.flexRowContent--infoCardsDiv {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1180px) {
+  .flexRowContent--infoCardsDiv {
+    justify-content: space-evenly;
+  }
+}
+
+.flexRowContent--infoCardsDiv .stretchChildrenWidth {
+  background: #f8f7fc;
+  padding: 0 0 40px;
+  width: 30.7% !important;
+  min-width: 360px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexColChild--infoCardFidelidade:last-child {
+  margin-top: 2.5rem;
+}
+
+/* Footer */
+.flexRow--newsletter,
+.flexRow--menu-row,
+.flexRow--payment-methods,
+.flexRow--credits {
+  background: #142032;
+  color: #ffffff !important;
+}
+
+.flexRow--payment-methods .stretchChildrenWidth:first-child {
+  width: 70% !important;
+}
+.flexColChild--newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flexRowContent--footer-menu {
+  justify-content: baseline;
+}
+.flexRowContent--midias-footer .stretchChildrenWidth {
+  max-width: 48px;
+}
+.flexRow--credits {
+  padding: 12px 0;
+  margin: 0 auto;
+}
+.flexRowContent--credits {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.flexRow--logo-footer {
+  max-width: 1440px;
+}
+.flexRow--payments-flags {
+  align-self: center;
+  justify-content: flex-end;
+}
+.flexRowContent--credits {
+  padding: 12px 0;
+}
+.flexRow--credits .stretchChildrenWidth:first-child {
+  justify-content: left;
+  align-items: center;
+}
+.flexRow--credits .stretchChildrenWidth:last-child {
+  justify-content: flex-end;
+  align-items: center;
+}
+.flexRow--credits-acct {
+  justify-content: flex-end !important;
+  max-width: 60px;
+}
+.flexRowContent--shelf-title {
+  max-width: 415px;
+}
+.flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installments) {
+  font-weight: 400;
+  font-size: 20px;
+  color: #a1a8b3;
+}
+.flexCol--pdp-selling-and-list-price-container {
+  row-gap: 1.3rem;
+}
+.flexColChild--pdp-selling-and-list-price-container {
+  color: #a1a8b3;
+}
+.flexRowContent--quantity-and-buy-btn-container {
+  margin-top: 1.3rem;
+}
+.flexRowContent--quantity-and-buy-btn-container .stretchChildrenWidth {
+  width: 100% !important;
+}
+.flexRowContent--home-shelf-3 :global(.vtex-flex-layout-0-x-flexColChild) {
+  width: 100%;
+}
+.flexRow--pdp-main-container {
+  padding-top: 50px;
+}
+.flexColChild--flex-dropdown-pdp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.flexColChild--assembly-options :global(.vtex-button) {
+  margin-top: 0.75rem;
+}
+.flexRow--demo-store-warning {
+  background-color: #f8f7fc;
+}
+@media only screen and (max-width: 640px) {
+  .flexRowContent--payments-flags {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem auto;
+    max-width: 190px;
+    row-gap: 1rem;
+  }
+  .flexRowContent--midias-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 136px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+  .flexRow--midias-footer {
+    width: 100%;
+  }
+  .flexRow--credits-acct {
+    max-width: unset;
+    justify-content: center;
+    min-height: 70px;
+  }
+  .flexRowContent--credits-acct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .flexRowContent--payment-methods-flags {
+    border-top: 1px solid #f1efed;
+  }
+  .flexRow--newsletter {
+    height: auto;
+    padding: 16px 0;
+  }
+  .flexRowContent--payment-methods {
+    padding: 16px 0 20px 0;
+  }
+  .flexRow--newsletter {
+    height: auto;
+  }
+  .flexRow--quantity-and-buy-btn-container :global(.vtex-button) {
+    max-width: 100%;
+    width: 100%;
+  }
+  .flexRow--not-found {
+    padding: 38px 0 76px;
+  }
+  .flexCol--not-found-text {
+    padding: 0 0 50px;
+  }
+  .flexColChild--not-found-text,
+  .flexColChild--not-found-image {
+    display: flex;
+    justify-content: center;
+  }
+  .flexCol--not-found-image {
+    padding: 0 30px;
+  }
+  .flexRow--banner-row-department {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .flexRowContent--credits-acct {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .flexRow--newsletter {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .flexRow--menus-footer-container,
+  .flexRow--payment-methods,
+  .flexRow--payment-methods-flags,
+  .flexRow--credits-acct {
+    background-color: #142032;
+  }
+}

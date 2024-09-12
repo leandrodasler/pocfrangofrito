@@ -1,0 +1,255 @@
+{
+  "flex-layout.row#info-cards": {
+    "props": {
+      "blockClass": "infoCards"
+    },
+    "children": ["flex-layout.col#dontmiss-title"]
+  },
+  "flex-layout.col#dontmiss-title": {
+    "children": [
+      "flex-layout.row#category-title-2",
+      "flex-layout.row#category-2",
+      "flex-layout.row#home-banner-assinaturas",
+      "flex-layout.row#assinaturas-title",
+      "flex-layout.row#assinaturas-shelf",
+      "flex-layout.row#dontmiss-title",
+      "flex-layout.row#dontmiss-cardsdiv"
+    ]
+  },
+  "flex-layout.row#category-title-2": {
+    "children": ["rich-text#category-title-2", "menu-item#shelf-link-2"],
+    "props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Home - Prateleira 2 - Título"
+  },
+  "rich-text#category-title-2": {
+    "props": {
+      "text": "## Acessórios",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "menu-item#shelf-link-2": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Passaros",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "flex-layout.row#category-2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf#demo2"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      // "category": "1000161" /* categoria Cachorros */,
+      "category": "1" /* categoria Pássaros */,
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "flex-layout.row#home-banner-assinaturas": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#home-banner-assinaturas"],
+    "title": "Home - Banner Assinaturas"
+  },
+  "flex-layout.col#home-banner-assinaturas": {
+    "children": ["image#home-banner-assinaturas"]
+  },
+  "image#home-banner-assinaturas": {
+    "props": {
+      "src": "assets/banners/assinatura-home.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/kit?_q=kit&map=ft"
+      }
+    }
+  },
+
+  "flex-layout.row#assinaturas-title": {
+    "children": ["rich-text#assinaturas-title"],
+    "props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Home - Assinaturas"
+  },
+  "rich-text#assinaturas-title": {
+    "props": {
+      "text": "## Kits para seu Pet",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#assinaturas-shelf": {
+    "children": ["list-context.product-list#assinaturas"]
+  },
+  "list-context.product-list#assinaturas": {
+    "blocks": ["product-summary.shelf#assinaturas"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      "collection": "139",
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "product-summary.shelf#assinaturas": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name#assinaturas"
+    ]
+  },
+  "product-summary-name#assinaturas": {
+    "props": {
+      "blockClass": ["shelfName", "center"]
+    }
+  },
+
+  "product-summary.shelf#demo2": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+    ]
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#dontmiss-title": {
+    "props": {
+      "blockClass": "infoCardsTitle"
+    },
+    "children": ["rich-text#dontmiss"]
+  },
+  "rich-text#dontmiss": {
+    "props": {
+      "text": "## Não fique de fora"
+    },
+    "title": "Dontmiss text"
+  },
+  "flex-layout.row#dontmiss-cardsdiv": {
+    "props": {
+      "blockClass": "infoCardsDiv"
+    },
+    "children": [
+      "flex-layout.col#dontmiss-cards",
+      "flex-layout.col#vtexclub-cards",
+      "flex-layout.col#dontmiss-cards"
+    ]
+  },
+  "flex-layout.col#dontmiss-cards": {
+    "props": {
+      "blockClass": "infoCard",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#whatsAppIcon",
+      "rich-text#buywithwhatsapp-title",
+      "rich-text#buywithwhatsapp-content",
+      "menu-item#buttonWhatsapp"
+    ]
+  },
+  "rich-text#buywithwhatsapp-title": {
+    "props": {
+      "text": "Compre pelo Whatsapp",
+      "textColor": "#142032",
+      "blockClass": "dontmissTitle",
+      "font": "t-heading-4"
+    },
+    "title": "Dontmiss text"
+  },
+  "rich-text#buywithwhatsapp-content": {
+    "props": {
+      "text": "Nossa equipe está preparada para te atender à distância. Converse com uma das nossas personal shoppers, tire suas dúvidas e receba  sugestões personalizadas.",
+      "textColor": "#142032",
+      "blockClass": "dontmiss",
+      "font": "t-heading-6",
+      "textAlignment": "CENTER"
+    },
+    "title": "Dontmiss text"
+  },
+  "menu-item#buttonWhatsapp": {
+    "props": {
+      "blockClass": "buttonWhatsapp",
+      "id": "buttonWhatsapp",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "buttonWhatsapp",
+        "text": "MANDAR UMA MENSAGEM"
+      }
+    }
+  },
+  "flex-layout.col#vtexclub-cards": {
+    "props": {
+      "blockClass": "infoCardFidelidade"
+    },
+    "children": [
+      "image#fidelidadebanner",
+      "rich-text#vtexclub-cards-content",
+      "menu-item#vtexclub-cards"
+    ]
+  },
+  "image#fidelidadebanner": {
+    "props": {
+      "src": "assets/banners/card-club-fidelidade.jpg",
+      "maxWidth": "100%"
+    }
+  },
+  "image#whatsAppIcon": {
+    "props": {
+      "src": "assets/img/whatsapp.png",
+      "maxWidth": "100%",
+      "blockClass": "infoCard-whatsApp"
+    }
+  },
+  "rich-text#vtexclub-cards-content": {
+    "props": {
+      "text": "Tenha acesso aos lançamentos em primeira mão, ganhe bônus de 10% em cada compra e muito mais.",
+      "textColor": "#142032",
+      "blockClass": "dontmissfidelidade",
+      "font": "t-heading-6",
+      "textAlignment": "CENTER"
+    },
+    "title": "Dontmiss text"
+  },
+  "menu-item#vtexclub-cards": {
+    "props": {
+      "blockClass": "buttonWhatsapp",
+      "id": "vtexclub",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "vtexclub",
+        "text": "QUERO FAZER PARTE"
+      }
+    }
+  }
+}
